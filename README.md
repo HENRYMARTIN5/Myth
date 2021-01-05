@@ -37,3 +37,5 @@ You output should look something like this:
 ```
 Hello, Myth world!
 ```
+
+Remember, if you need help, just take a peek at the wiki!
