@@ -1,0 +1,49 @@
+~ This is a full demo of all the features in Myth so far. More coming soon!
+~ This is a comment. It starts with a tilde.
+
+~ First off, we have the basic out function.
+out The OUT function prints text in the console.
+
+~ Next, we have the delay function.
+out This is a delay of 1 second.
+delay 1
+out This was printed after a delay!
+
+~ There is also a system to add colors to your console output.
+~ They can be added by using a StringLiteralPrefix, like this:
+~ -*Color Name* out *Text*
+~ The colors go as follows:
+
+-red out This is red.
+-yellow out This is yellow.
+-green out This is green.
+-cyan out This is cyan.
+-blue out This is blue.
+-magenta out This is magenta.
+-grey out This is grey.
+-white out This is white.
+
+~ Next, let's take a look at variables. There's not much you can do with them now, but they will be useful later.
+
+~ To define a variable, just start your line with the statement "var".
+
+var greeting = Hello there!
+
+~ Now, that greeting is a bit dull, let's change it.
+
+var greeting = Hello! Nice weather we're having, isn't it?
+
+~ Ahh. That's better. Now, I want to show that greeting. To do that, we use the "outvar" statement.
+
+out Here is a greeting for you:
+out
+outvar greeting
+
+~ Uh oh... our console is getting messy. Let's use the clear statement and clean that up. First, i'll give the user some time to read the text, though.
+
+delay 35
+
+clear
+
+~ That's it for now!
+~ Thanks for taking the time to read through this incredibly boring demo!

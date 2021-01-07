@@ -4,7 +4,8 @@ import platform
 import sys
 import os
 from utils import clear
-
+import output
+from future import print as pr
 debug = True
 noDebug = False
 def compile(filepath, out, dbg, compileType):
@@ -18,7 +19,7 @@ def compile(filepath, out, dbg, compileType):
 	f.close()
 	f = open(filepath)
 	numDone = 0
-	sleep(1)
+	sleep(0.5)
 	for line in f:
 		clear()
 		cpr(str(numDone) + " / " + str(count), "blue")
@@ -29,7 +30,7 @@ def compile(filepath, out, dbg, compileType):
 
 		elif line.startswith("outvar "):
 			varToPrint = line.split("outvar ")[1]
-			FileData.append("print(varHandler.get('"+varToPrint.replace("\n", "")+"'))")
+			FileData.append("print(str(varHandler.get('"+varToPrint.replace("\n", "")+"')))")
 
 
 
@@ -116,7 +117,7 @@ def compile(filepath, out, dbg, compileType):
 		if compileType:
 			os.system("python " + out)
 		else:
-			print("Plain run execution is currently not supported, sorry!")
+			cpr("Plain run execution is currently not supported, sorry!", "red")
 			
 
 
@@ -143,3 +144,7 @@ class ErrorHandler():
 		else:
 			cpr("ERROR - Delay Parameters cannot be of type STRING.\nDebugVal: You may have accidentally entered a string.", "red")
 		
+
+
+if __name__ == '__main__':
+	compile("in.mth", "out.py", debug, output.py)

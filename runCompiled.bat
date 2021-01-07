@@ -1,1 +1,0 @@
-cd 'd:\Documents\Myth'; & 'C:\Users\henry\AppData\Local\Programs\Python\Python38-32\python.exe' 'c:\Users\henry\.vscode\extensions\ms-python.python-2020.11.358366026\pythonFiles\lib\python\debugpy\launcher' '49511' '--' 'd:\Documents\Myth\out.py'

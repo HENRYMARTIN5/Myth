@@ -1,1 +1,0 @@
-import myth, output;myth.compile("in.mth", "out.py", myth.debug, output.py)
